@@ -6,6 +6,7 @@ public class Player {
     protected int y;
     protected static int fieldWidth;
     protected static int fieldHeigth;
+    protected int count = 0;
 
     public static void setFieldSize(int width, int heigth) {
         fieldWidth = width;
@@ -50,7 +51,7 @@ public class Player {
     }
 
     public String toString () {
-        return "name: " + name + ", положение: (" + x + " , " + y + ")";
+        return "name: " + name + ", положение: (" + x + " , " + y + "), counts = " + count;
     }
 
     public void Move() {
